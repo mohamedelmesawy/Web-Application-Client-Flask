@@ -155,32 +155,27 @@
 
             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p>
 
-            <a href="about.html" class="btn btn-primary mt-4">Read More</a>
-            
-            <!-- <form action="" enctype="multipart/form-data" method="post" id="form-predict-seg">
-              <label for="myfile">Select a file:</label>
-              <input type="file" id="myfile" name="myfile"><br><br>
-              <input type="submit" id='btn-predict-seg'>
-            </form> -->
-
-            <form id="upload-file" method="post" enctype="multipart/form-data">
-              <div>
-                <select style="color:white;" class="btn btn-secondary dropdown-toggle" name = "dropdown" id="dropdownmodel">
-                  <option default value = "baseline">Baseline Model</option>
-                  <option value = "mtkt">MTKT Model</option>
-               </select>
+            <form id="upload-file" method="post" enctype="multipart/form-data" class="form-contact">
+              <h3 class="fg-primary">Predict Segmentaion</h3>
+              <div class="row">
+                <div class="col-sm-1.5 py-2">
+                    <label for="file">Upload</label>
+                </div>
+                <div class="col-sm-5 py-2">
+                    <input name="file" type="file">
+                </div><div class="col-sm-5 py-2">
+                  <select style="color:white;" class="btn btn-primary dropdown-toggle" name="dropdown" id="dropdownmodel">
+                    <option default="" value="baseline">Baseline Model</option>
+                    <option value="mtkt">MTKT Model</option>
+                  </select>
+                </div>
               </div>
-              <fieldset>
-                  <label for="file">Upload</label>
-                  <input name="file" type="file">
-              </fieldset>
-              <fieldset>
-                  <button id="upload-file-btn" type="button">Upload</button>
-              </fieldset>
+              <div class="col-12 mt-3">
+                  <button id="upload-file-btn" type="button" class="btn btn-primary px-5 col-10">Upload</button>
+              </div>
 
 
             </form>
-
           </div>
           <div class="col-lg-6 py-3">
             <div class="about-img">

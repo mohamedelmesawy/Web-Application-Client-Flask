@@ -164,19 +164,27 @@
             </form> -->
 
             <form id="upload-file" method="post" enctype="multipart/form-data">
+              <div>
+                <select style="color:white;" class="btn btn-secondary dropdown-toggle" name = "dropdown" id="dropdownmodel">
+                  <option default value = "baseline">Baseline Model</option>
+                  <option value = "mtkt">MTKT Model</option>
+               </select>
+              </div>
               <fieldset>
-                  <label for="file">Select a file</label>
+                  <label for="file">Upload</label>
                   <input name="file" type="file">
               </fieldset>
               <fieldset>
                   <button id="upload-file-btn" type="button">Upload</button>
               </fieldset>
-          </form>
+
+
+            </form>
 
           </div>
           <div class="col-lg-6 py-3">
             <div class="about-img">
-              <img src="../static/img/about.jpg" alt="" id='img-predicted'>
+              <img src="../static/img/segmentation.gif" alt="" id='img-predicted'>
             </div>
           </div>
         </div>
@@ -724,7 +732,6 @@
         </div>
       </div>
 
-      <button id='btn-hi'>HIIIIIIIIII MMMMMMMMMMMMMMMMMMMM</button>
       <hr>
 
       <div class="row mt-4">

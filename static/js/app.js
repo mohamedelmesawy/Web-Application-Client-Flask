@@ -59,17 +59,19 @@ window.onload = function () {
 
         $('#upload-file-btn').click(function() {
             var form_data = new FormData($('#upload-file')[0]);
+            var model_type = $('#dropdownmodel')[0].selectedOptions[0].value
+
             $.ajax({
                 type: 'POST',
-                url: baseUrl + 'upload',
+                url: baseUrl + 'upload/' + model_type,
                 data: form_data,
                 contentType: false,
                 cache: false,
                 processData: false,
-                success: function(data) {
-                    console.log('Success!');
-                    // Show the image in HTML 
-                    $('#img-predicted').attr("src","bg_image_3.jpg");
+                success: function (data) {
+                    console.log('Hiiiiiiiiiiiiiii')
+                    $('#img-predicted').attr("src", "data:image/png;base64," + data);
+                    console.log('Finished')
                 },
                 error:function(result) {
                     alert('error');
@@ -79,6 +81,4 @@ window.onload = function () {
     
     console.log('Developers');
 }
-
-
 

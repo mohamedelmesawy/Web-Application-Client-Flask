@@ -160,7 +160,7 @@
             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
               and I will give you a complete account of the system, and expound the actual teachings of the great
               explorer of</p>
-
+            <div>
               <form id="upload-file" method="post" enctype="multipart/form-data" class="form-contact">
                 <h3 class="fg-primary">Predict Segmentaion</h3>
                 <div class="row">
@@ -168,17 +168,52 @@
                     <input name="file" type="file">
                   </div>
                   <div class="col-sm-6 py-1">
-                    <select style="color:white;" class="btn btn-primary dropdown-toggle float-right" name="dropdown" id="dropdownmodel">
+                    <select style="color:white;" class="btn btn-primary dropdown-toggle float-right" name="dropdown"
+                      id="dropdownmodel">
                       <option default="" value="baseline">Baseline Model</option>
                       <option value="mtkt">MTKT Model</option>
                     </select>
                   </div>
                 </div>
                 <div class="row">
-                  <button id="upload-file-btn" type="button" class="btn btn-primary px-5 col-10" style=" width: 70%;">Upload</button>
+                  <button id="upload-file-btn" type="button" class="btn btn-primary px-5 col-10"
+                    style=" width: 70%;">Upload</button>
                 </div>
               </form>
+              <!--  -->
+              <form id="upload-two-files" method="post" enctype="multipart/form-data" class="form-contact">
+                <h3 class="fg-primary">predict segmentaion and calculate mIOU</h3>
+                <div class="row">
+                  <div class="col-sm-6 py-2">
+                    <label for="file" class="fg-grey">Select image</label>
+                    <input name="file" type="file" class="form-control">
+                  </div>
+                  <div class="col-sm-6 py-2">
+                    <label for="file" class="fg-grey">Select ground truth</label>
+                    <input name="file" type="file" class="form-control">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 py-1">
+                    <select style="color:white;" class="btn btn-primary dropdown-toggle " name="dropdown"
+                      id="dropdownmodel-miou">
+                      <option default="" value="baseline">Baseline Model</option>
+                      <option value="mtkt">MTKT Model</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <button id="btn-upload-two-files" type="button" class="btn btn-primary px-5 col-10"
+                    style=" width: 70%;">Upload</button>
+                </div>
+
+              </form>
+              <!--  -->
+            </div>
           </div>
+
+
 
           <div class="col-lg-6 py-3">
             <div class="about-img">

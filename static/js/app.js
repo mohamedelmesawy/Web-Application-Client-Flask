@@ -78,6 +78,28 @@ window.onload = function () {
                 }
             });
         });
+
+        $('#btn-upload-two-files').click(function() {
+            var form_data = new FormData($('#upload-two-files')[0]);
+            var model_type = $('#dropdownmodel-miou')[0].selectedOptions[0].value
+
+            $.ajax({
+                type: 'POST',
+                url: baseUrl + 'uploadfiles/' + model_type,
+                data: form_data,
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function (data) {
+                    console.log('Hiiiiiiiiiiiiiii')
+                    $('#img-predicted-miou').attr("src", "data:image/png;base64," + data);
+                    console.log('Finished')
+                },
+                error:function(result) {
+                    alert('error');
+                }
+            });
+        });
     
     console.log('Developers');
 }

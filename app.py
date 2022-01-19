@@ -8,7 +8,9 @@ app = Flask(__name__)
 def list():
     return render_template("index.html")
 
-
+@app.get("/about.html")
+def list():
+    return render_template("about.html")  
 
 # @app.route('/predict', methods=["POST"])
 # def predict():

@@ -59,18 +59,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <div class="d-inline-block">
-                            <span class="mai-mail fg-primary"></span> <a href="mailto:contact@mail.com">contact@mail.com</a>
-                        </div>
-                        <div class="d-inline-block ml-2">
-                            <span class="mai-call fg-primary"></span> <a href="tel:+0011223495">+0011223495</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-right d-none d-md-block">
-                        <div class="social-mini-button">
-                            <a href="#"><span class="mai-logo-facebook-f"></span></a>
-                            <a href="#"><span class="mai-logo-twitter"></span></a>
-                            <a href="#"><span class="mai-logo-youtube"></span></a>
-                            <a href="#"><span class="mai-logo-linkedin"></span></a>
+                            <span class="mai-mail fg-primary"></span> <a href="mailto:seg2ram@gmail.com">seg2ram@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -93,19 +82,7 @@
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="portfolio.html" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="blog.html" class="nav-link">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact</a>
+                            <a href="https://github.com/mohamedelmesawy/MTAF" class="nav-link">GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +94,7 @@
         <div class="page-banner home-banner mb-5">
             <div class="slider-wrapper">
                 <div class="owl-carousel hero-carousel">
-                    <div class="hero-carousel-item">
+                    <div class="hero-carousel-item" style="background-image: url('../static/img/bg_image_1.jpg'); background-color: red; background-blend-mode: screen; z-index: 100;">
                         <img src="../static/img/bg_image_1.jpg" alt="">
                         <div class="img-caption">
                             <div class="ram-txt-upper" style="color: #f4f4f4; font-size: 30px;">Urban Scene</div>
@@ -155,25 +132,26 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 py-3">
                         <h2 class="title-section">We are <span class="fg-primary">Predicting Segmentaion</span> with our two modeles</h2>
-
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p>
+                        <!-- <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p> -->
                         <div>
                             <!-- form 1 -->
                             <form id="upload-file" method="post" enctype="multipart/form-data" class="form-contact">
-                                <!-- <h3 class="fg-primary"></h3> -->
                                 <div class="row">
-                                    <div class="col-sm-4 py-2">
-                                        <input name="file" type="file">
-                                    </div>
-                                    <div class="col-sm-6 py-1">
-                                        <select style="color:white;" class="btn btn-primary dropdown-toggle float-right" name="dropdown" id="dropdownmodel">
-                      <option default="" value="baseline">Baseline Model</option>
-                      <option value="mtkt">MTKT Model</option>
-                    </select>
+                                    <div class="col-sm-8 py-2">
+                                        <label for="file " class="fg-grey ">Select image</label>
+                                        <input name="file" type="file" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <button id="upload-file-btn" type="button" class="btn btn-primary px-5 col-10" style=" width: 70%;">Upload</button>
+                                    <div class="col-sm-6 py-1">
+                                        <select style="color:white;" class="btn btn-secondary dropdown-toggle" name="dropdown" id="dropdownmodel">
+                                        <option default="" value="baseline">Baseline Model</option>
+                                        <option value="mtkt">MTKT Model</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-sm-6 py-1">
+                                        <button id="upload-file-btn" type="button" class="btn btn-primary" style=" width: 90%;">Upload</button>
+                                    </div>
                                 </div>
                             </form>
                             <!--  -->
@@ -196,34 +174,33 @@
                     </div>
                     <div class="col-lg-4 py-3 ">
                         <h2 class="title-section ">We are <span class="fg-primary ">Predicting Segmentaion with mIOU</span> with our two modeles</h2>
-
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p>
+                        <!-- <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p> -->
                         <div>
                             <!-- form 2 -->
                             <form id="upload-two-files " method="post " enctype="multipart/form-data " class="form-contact ">
                                 <div class="row ">
-                                    <div class="col-sm-6 py-2 ">
+                                    <div class="col-sm-8 py-2 ">
                                         <label for="file " class="fg-grey ">Select image</label>
-                                        <input name="file " type="file " class="form-control ">
+                                        <input name="file " type="file" class="form-control">
                                     </div>
-                                    <div class="col-sm-6 py-2 ">
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-8 py-2">
                                         <label for="file " class="fg-grey ">Select ground truth</label>
-                                        <input name="file " type="file " class="form-control ">
+                                        <input name="file " type="file" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row ">
-                                    <div class="col-sm-6 py-1 ">
-                                        <select style="color:white; " class="btn btn-primary dropdown-toggle " name="dropdown " id="dropdownmodel-miou ">
-                      <option default=" " value="baseline ">Baseline Model</option>
-                      <option value="mtkt ">MTKT Model</option>
-                    </select>
+                                    <div class="col-sm-6 py-1">
+                                        <select style="color:white; " class="btn btn-secondary dropdown-toggle" name="dropdown " id="dropdownmodel-miou ">
+                                          <option default=" " value="baseline ">Baseline Model</option>
+                                          <option value="mtkt ">MTKT Model</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 py-1">
+                                        <button id="btn-upload-two-files " type="button " class="btn btn-primary" style=" width: 90%; ">Upload</button>
                                     </div>
                                 </div>
-
-                                <div class="row ">
-                                    <button id="btn-upload-two-files " type="button " class="btn btn-primary px-5 col-10 " style=" width: 70%; ">Upload</button>
-                                </div>
-
                             </form>
                             <!--  -->
                         </div>
@@ -234,7 +211,7 @@
         </div>
         <!-- .page-section DATA -->
         <section id="service-page ">
-            <div class="container home-bg " style="min-width: 100%; background: #1b1b1b ">
+            <div class="container home-bg " style="min-width: 100%; background: #1b1b1b; text-transform: uppercase; ">
                 <div class="row ">
                     <div class="col-md-12 text-center ">
                         <h1 class="service-title " style="color: #f4f4f4; font-size: 30px; ">Data</h1>
@@ -250,21 +227,21 @@
                         <div class="ram-icons ">
                             <img src="static\images\gta.png " alt=" ">
                         </div>
-                        <h3 style="color: #00B9EB; ">GTA</h3>
+                        <h3 style="color: #00B9EB; "><a href="https://paperswithcode.com/dataset/gta5">GTA</a></h3>
                         <p style="color: #d1d1e0; ">A dataset of 24,966 labeled synthetic images, generated from the eponymous video game.</p>
                     </div>
                     <div class="col-lg-3 py-3 text-center service " style="margin-left: 4%; margin-right: 4% ">
                         <div class="ram-icons ">
                             <img src="static\images\cityscapes.png " alt=" ">
                         </div>
-                        <h3 style="color: #00B9EB; ">Cityscapes</h3>
+                        <h3 style="color: #00B9EB; "><a href="https://www.cityscapes-dataset.com/">Cityscapes</a></h3>
                         <p style="color: #d1d1e0; ">Contains 25,000 labeled urban scenes from cities around Germany, 5,000 are fine annotated and others are coarse.</p>
                     </div>
                     <div class="col-lg-3 py-3 text-center service " style="margin-left: 4%; margin-right: 4% ">
                         <div class="ram-icons ">
                             <img src="static\images\mapillary.png " alt=" ">
                         </div>
-                        <h3 style="color: #00B9EB; ">Mapillary</h3>
+                        <h3 style="color: #00B9EB; "><a href="https://www.mapillary.com/dataset/vistas">Mapillary</a></h3>
                         <p style="color: #d1d1e0; ">A dataset collected in multiple cities around the world, which is composed of 20,000 labeled scenes.</p>
                     </div>
 
@@ -274,77 +251,6 @@
             <!-- /.container -->
         </section>
         <!-- /#service-page -->
-
-        <!-- .page-section Trials -->
-        <div class="page-section " style="padding: 50px 0px; ">
-            <div class="container ">
-                <div class="row align-items-center ">
-                    <div class="col-md-12 text-center ">
-                        <h2 class="title-section " style="text-transform: uppercase; ">Some of our Trials</h2>
-                    </div>
-                </div>
-                <div class="row mt-3 ">
-                    <div class="col-lg-4 py-3 service-title " style="font-size: 20px; color: #00b9f7; ">
-                        Semantic Segmentaion
-                    </div>
-                    <div class="col-lg-4 py-3 service-title " style="font-size: 20px; color: #00b9f7; ">
-                        Unsupervised Domain Adaptation
-                    </div>
-                    <div class="col-lg-4 py-3 service-title " style="font-size: 20px; color: #00b9f7; ">
-                        Generative Adverserial Network
-                    </div>
-                    <!-- seg1 -->
-                    <div class="col-lg-4 py-3 ">
-                        <div class="portfolio ">
-                            <a href="../static/images/seg1.png " data-fancybox="portfolio ">
-                                <img src="../static/images/seg1.png " alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- uda1 -->
-                    <div class="col-lg-4 py-3 ">
-                        <div class="portfolio ">
-                            <a href="../static/images/uda1.png " data-fancybox="portfolio ">
-                                <img src="../static/images/uda1.png " alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- gan1 -->
-                    <div class="col-lg-4 py-3 ">
-                        <div class="portfolio ">
-                            <a href="../static/images/gan11.png " data-fancybox="portfolio ">
-                                <img src="../static/images/gan11.png " alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- seg2 -->
-                    <div class="col-lg-4 py-3 ">
-                        <div class="portfolio ">
-                            <a href="../static/images/seg2.png " data-fancybox="portfolio ">
-                                <img src="../static/images/seg2.png " alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- uda2 -->
-                    <div class="col-lg-4 py-3 ">
-                        <div class="portfolio ">
-                            <a href="../static/images/uda2.png " data-fancybox="portfolio ">
-                                <img src="../static/images/uda2.png " alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- gan2 -->
-                    <div class="col-lg-4 py-3 ">
-                        <div class="portfolio ">
-                            <a href="../static/images/gans2.png " data-fancybox="portfolio ">
-                                <img src="../static/images/gans2.png " alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- .container -->
-        </div>
 
         <!-- .page-section Models -->
         <div class="page-section " style="padding: 50px 0px; ">
@@ -395,6 +301,75 @@
             <!-- .container -->
         </div>
 
+        <!-- Carla -->
+        <!-- Testimonials -->
+        <div class="page-section" style="padding: 50px 0px; ">
+            <div class="container home-bg " style="min-width: 100%; background: #1b1b1b">
+                <div class="text-center " style="padding-bottom: 25px;">
+                    <h1 class="service-title " style="color: #f4f4f4; font-size: 30px; text-transform: uppercase; "><span class="fg-primary">Carla</span> Simulator</h1>
+                    <div class="service-aro-icon ">
+                        <div class="service-aro-left "></div>
+                        <i class="fa fa-gift "></i>
+                        <div class="service-aro-right "></div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla1-1.jpeg" alt="">
+                    </div>
+
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla1-2.jpeg" alt="">
+                    </div>
+
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla2.jpeg" alt="">
+                    </div>
+
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla2-2.jpeg" alt="">
+                    </div>
+
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla3.jpeg" alt="">
+                    </div>
+                    <!-- 
+                    <div class="card-testimonial">
+                      <img src="../static/images/carla1-1.jpeg" alt="">
+                    </div> -->
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .page-section -->
+
+        <!-- Pull Req. -->
+        <div class="page-section" style="padding: 50px 0px; ">
+            <div class="container">
+                <div class="text-center ">
+                    <h2 class="title-section " style="margin-bottom: 45px; text-transform: uppercase; ">Pull Requst</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-3 py-3">
+                        <h2 class="title-section">We made a small <span class="fg-primary">contribution</span> on Valeo's repo</h2>
+                        <!-- <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p> -->
+                        <div>
+                            <!--  -->
+                        </div>
+                    </div>
+                    <!-- video -->
+                    <div class="col-lg-9 py-3">
+                        <div class="about-img" style="max-width: 100%;">
+                            <img src="../static/images/Valeo.jpg" alt="" id='img-predicted'>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
         <!-- .page-section -->
         <!-- Ram Heros -->
         <section id="about-page">
@@ -413,7 +388,7 @@
                     <div class="row ">
                         <div class="col-md-4 text-center member ">
                             <div class="member-img ">
-                                <img src="../static/images/01.jpg " alt=" " />
+                                <img src="../static/images/02.jpg " alt=" " />
                                 <div class="member-social ">
                                     <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
                                     <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
@@ -421,8 +396,8 @@
                                     <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
                                 </div>
                             </div>
-                            <h3>Lucy</h3>
-                            <span>Lead Developer</span>
+                            <h3>Mohamed</h3>
+                            <span>Designer</span>
                         </div>
                         <div class="col-md-4 text-center member ">
                             <div class="member-img ">
@@ -434,7 +409,7 @@
                                     <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
                                 </div>
                             </div>
-                            <h3>Smith</h3>
+                            <h3>Mohamed</h3>
                             <span>Designer</span>
                         </div>
                         <div class="col-md-4 text-center member ">
@@ -447,7 +422,7 @@
                                     <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
                                 </div>
                             </div>
-                            <h3>Shon</h3>
+                            <h3>Ali</h3>
                             <span>Developer</span>
                         </div>
                     </div>
@@ -463,12 +438,12 @@
                                     <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
                                 </div>
                             </div>
-                            <h3>Lucy</h3>
+                            <h3>Rawan</h3>
                             <span>Lead Developer</span>
                         </div>
                         <div class="col-md-6 text-center member ">
                             <div class="member-img ">
-                                <img src="../static/images/02.jpg " alt=" " />
+                                <img src="../static/images/01.jpg " alt=" " />
                                 <div class="member-social ">
                                     <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
                                     <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
@@ -476,9 +451,10 @@
                                     <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
                                 </div>
                             </div>
-                            <h3>Smith</h3>
-                            <span>Designer</span>
+                            <h3>Afnan</h3>
+                            <span>Lead Developer</span>
                         </div>
+
                     </div>
                     <!-- /.row -->
                 </div>
@@ -491,61 +467,12 @@
             <div class="container ">
                 <div class="text-center ">
                     <h2 class="title-section mb-3 ">Stay in touch</h2>
-                    <p>Just say hello or drop us a line. You can manualy send us email on <a href="mailto:example@mail.com ">example@mail.com</a></p>
-                </div>
-                <div class="row justify-content-center mt-5 ">
-                    <div class="col-lg-8 ">
-                        <form action="# " class="form-contact ">
-                            <div class="row ">
-                                <div class="col-sm-6 py-2 ">
-                                    <label for="name " class="fg-grey ">Name</label>
-                                    <input type="text " class="form-control " id="name " placeholder="Enter name.. ">
-                                </div>
-                                <div class="col-sm-6 py-2 ">
-                                    <label for="email " class="fg-grey ">Email</label>
-                                    <input type="text " class="form-control " id="email " placeholder="Email address.. ">
-                                </div>
-                                <div class="col-12 py-2 ">
-                                    <label for="subject " class="fg-grey ">Subject</label>
-                                    <input type="text " class="form-control " id="subject " placeholder="Subject.. ">
-                                </div>
-                                <div class="col-12 py-2 ">
-                                    <label for="message " class="fg-grey ">Message</label>
-                                    <textarea id="message " rows="8 " class="form-control " placeholder="Enter message.. "></textarea>
-                                </div>
-                                <div class="col-12 mt-3 ">
-                                    <button type="submit " class="btn btn-primary px-5 ">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <p>Just say hello or drop us a line. You can manualy send us email on <a href="mailto:seg2ram@gmail.com ">seg2ram@gmail.com</a></p>
+                    <br>
+                    <h1 class="title-section mb-3 ">RAM</h1>
                 </div>
             </div>
             <!-- .container -->
-        </div>
-        <!-- .page-section -->
-
-        <div class="page-section ">
-            <div class="container-fluid ">
-                <div class="row row-cols-md-3 row-cols-lg-5 justify-content-center text-center ">
-                    <div class="py-3 px-5 ">
-                        <img src="../static/img/clients/airbnb.png " alt=" ">
-                    </div>
-                    <div class="py-3 px-5 ">
-                        <img src="../static/img/clients/google.png " alt=" ">
-                    </div>
-                    <div class="py-3 px-5 ">
-                        <img src="../static/img/clients/mailchimp.png " alt=" ">
-                    </div>
-                    <div class="py-3 px-5 ">
-                        <img src="../static/img/clients/paypal.png " alt=" ">
-                    </div>
-                    <div class="py-3 px-5 ">
-                        <img src="../static/img/clients/stripe.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-            <!-- .container-fluid -->
         </div>
         <!-- .page-section -->
 
@@ -555,28 +482,18 @@
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-3 py-3 ">
-                    <h3>Reve<span class="fg-primary ">Tive.</span></h3>
+                    <h3><span class="fg-primary ">RAM</span>-Team</h3>
                 </div>
                 <div class="col-lg-3 py-3 ">
                     <h5>Contact Information</h5>
-                    <p>301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
-                    <p>Email: example@mail.com</p>
-                    <p>Phone: +00 112323980</p>
+                    <p>Mansoura</p>
+                    <p>Email: seg2ram@gmail.com</p>
                 </div>
-                <div class="col-lg-3 py-3 ">
-                    <h5>Company</h5>
-                    <ul class="footer-menu ">
-                        <li><a href="# ">Career</a></li>
-                        <li><a href="# ">Resources</a></li>
-                        <li><a href="# ">News & Feed</a></li>
+                <div class="col-lg-3 py-3">
+                    <h5>Repo</h5>
+                    <ul class="footer-menu">
+                        <li><a href="https://github.com/mohamedelmesawy/MTAF">GitHub</a></li>
                     </ul>
-                </div>
-                <div class="col-lg-3 py-3 ">
-                    <h5>Newsletter</h5>
-                    <form action="# ">
-                        <input type="text " class="form-control " placeholder="Enter your email ">
-                        <button type="submit " class="btn btn-primary btn-sm mt-2 ">Submit</button>
-                    </form>
                 </div>
             </div>
 
@@ -584,7 +501,7 @@
 
             <div class="row mt-4 ">
                 <div class="col-md-6 ">
-                    <p>Copyright 2020. This template designed by <a href="https://macodeid.com ">MACode ID</a></p>
+                    <p>Copyright 2022. This template designed by <a href="https://macodeid.com ">MACode ID</a></p>
                 </div>
                 <div class="col-md-6 text-right ">
                     <div class="sosmed-button ">

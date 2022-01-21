@@ -90,11 +90,12 @@
             <!-- .container -->
         </nav>
         <!-- .navbar -->
-
+        <div style=" width: 100%; height: 600px; background-color: #0c2331; position: absolute; z-index: 5; mix-blend-mode: soft-light; ">
+        </div>
         <div class="page-banner home-banner mb-5">
             <div class="slider-wrapper">
                 <div class="owl-carousel hero-carousel">
-                    <div class="hero-carousel-item" style="background-image: url('../static/img/bg_image_1.jpg'); background-color: red; background-blend-mode: screen; z-index: 100;">
+                    <div class="hero-carousel-item">
                         <img src="../static/img/bg_image_1.jpg" alt="">
                         <div class="img-caption">
                             <div class="ram-txt-upper" style="color: #f4f4f4; font-size: 30px;">Urban Scene</div>
@@ -127,18 +128,19 @@
     </header>
 
     <main>
+        <!-- Prediction -->
         <div class="page-section">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 py-3">
-                        <h2 class="title-section">We are <span class="fg-primary">Predicting Segmentaion</span> with our two modeles</h2>
+                        <h2 class="title-section">Try to <span class="fg-primary" style="text-transform: uppercase;">Predict Segmentaion</span> using our two models</h2>
                         <!-- <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p> -->
-                        <div>
+                        <div style="transform: skewX(-3deg) rotateX(20deg);border-radius: 12px;overflow: hidden;">
                             <!-- form 1 -->
-                            <form id="upload-file" method="post" enctype="multipart/form-data" class="form-contact">
+                            <form id="upload-file" method="post" enctype="multipart/form-data" class="form-contact" style=" background-color: #61616112; padding: 15px; ">
                                 <div class="row">
                                     <div class="col-sm-8 py-2">
-                                        <label for="file " class="fg-grey ">Select image</label>
+                                        <label for="file" class="fg-grey">Select image</label>
                                         <input name="file" type="file" class="form-control">
                                     </div>
                                 </div>
@@ -169,36 +171,36 @@
                     <!-- video -->
                     <div class="col-lg-8 py-3">
                         <div class="about-img" style="max-width: 100%;">
-                            <img src=" ../static/img/segmentation.gif " alt=" " id='img-predicted-miou'>
+                            <img src=" ../static/img/segmentation.gif" alt="" id='img-predicted-miou'>
                         </div>
                     </div>
-                    <div class="col-lg-4 py-3 ">
-                        <h2 class="title-section ">We are <span class="fg-primary ">Predicting Segmentaion with mIOU</span> with our two modeles</h2>
+                    <div class="col-lg-4 py-3">
+                        <h2 class="title-section">Try to <span class="fg-primary" style="text-transform: uppercase;">Predict Segmentaion with mIOU</span> using our two models</h2>
                         <!-- <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p> -->
-                        <div>
+                        <div style="transform: skewX(-3deg) rotateX(20deg);border-radius: 12px;overflow: hidden;">
                             <!-- form 2 -->
-                            <form id="upload-two-files " method="post " enctype="multipart/form-data " class="form-contact ">
-                                <div class="row ">
-                                    <div class="col-sm-8 py-2 ">
-                                        <label for="file " class="fg-grey ">Select image</label>
-                                        <input name="file " type="file" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row ">
+                            <form id="upload-two-files" method="post" enctype="multipart/form-data" class="form-contact" style=" background-color: #61616112; padding: 15px; ">
+                                <div class="row">
                                     <div class="col-sm-8 py-2">
-                                        <label for="file " class="fg-grey ">Select ground truth</label>
-                                        <input name="file " type="file" class="form-control">
+                                        <label for="file" class="fg-grey">Select image</label>
+                                        <input name="file" type="file" class="form-control">
                                     </div>
                                 </div>
-                                <div class="row ">
+                                <div class="row">
+                                    <div class="col-sm-8 py-2">
+                                        <label for="file" class="fg-grey">Select ground truth</label>
+                                        <input name="file" type="file" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-sm-6 py-1">
-                                        <select style="color:white; " class="btn btn-secondary dropdown-toggle" name="dropdown " id="dropdownmodel-miou ">
-                                          <option default=" " value="baseline ">Baseline Model</option>
-                                          <option value="mtkt ">MTKT Model</option>
+                                        <select style="color:white;" class="btn btn-secondary dropdown-toggle" name="dropdown" id="dropdownmodel-miou">
+                                          <option default="" value="baseline">Baseline Model</option>
+                                          <option value="mtkt">MTKT Model</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-6 py-1">
-                                        <button id="btn-upload-two-files " type="button " class="btn btn-primary" style=" width: 90%; ">Upload</button>
+                                        <button id="btn-upload-two-files" type="button" class="btn btn-primary" style=" width: 90%;">Upload</button>
                                     </div>
                                 </div>
                             </form>
@@ -212,39 +214,39 @@
 
         <!-- DATA -->
         <!-- .page-section -->
-        <section id="service-page ">
-            <div class="container home-bg " style="min-width: 100%; background: #1b1b1b; text-transform: uppercase; ">
-                <div class="row ">
-                    <div class="col-md-12 text-center ">
-                        <h1 class="service-title " style="color: #f4f4f4; font-size: 30px; ">Data</h1>
-                        <div class="service-aro-icon ">
-                            <div class="service-aro-left "></div>
-                            <i class="fa fa-gift "></i>
-                            <div class="service-aro-right "></div>
+        <section id="service-page">
+            <div class="container home-bg" style="min-width: 100%; background: #1b1b1b; text-transform: uppercase;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="service-title" style="color: #f4f4f4; font-size: 30px;">Data</h1>
+                        <div class="service-aro-icon">
+                            <div class="service-aro-left"></div>
+                            <i class="fa fa-gift"></i>
+                            <div class="service-aro-right"></div>
                         </div>
-                        <h2 style="color: #d1d1e0; ">Three Urban Driving Datasets</h2>
-                        <p style="color: #d1d1e0; ">One is synthetic and the others are realistic</p>
+                        <h2 style="color: #d1d1e0;">Three Urban Driving Datasets</h2>
+                        <p style="color: #d1d1e0;">One is synthetic and the others are realistic</p>
                     </div>
-                    <div class="col-lg-3 py-3 text-center service " style="margin-left: 4%; margin-right: 4% ">
-                        <div class="ram-icons ">
-                            <img src="static\images\gta.png " alt=" ">
+                    <div class="col-lg-3 py-3 text-center service" style="margin-left: 4%; margin-right: 4%">
+                        <div class="ram-icons">
+                            <img src="static\images\gta.png" alt="">
                         </div>
-                        <h3 style="color: #00B9EB; "><a href="https://paperswithcode.com/dataset/gta5">GTA</a></h3>
-                        <p style="color: #d1d1e0; ">A dataset of 24,966 labeled synthetic images, generated from the eponymous video game.</p>
+                        <h3 style="color: #00B9EB;"><a href="https://paperswithcode.com/dataset/gta5">GTA</a></h3>
+                        <p style="color: #d1d1e0;">A dataset of 24,966 labeled synthetic images, generated from the eponymous video game.</p>
                     </div>
-                    <div class="col-lg-3 py-3 text-center service " style="margin-left: 4%; margin-right: 4% ">
-                        <div class="ram-icons ">
-                            <img src="static\images\cityscapes.png " alt=" ">
+                    <div class="col-lg-3 py-3 text-center service" style="margin-left: 4%; margin-right: 4%">
+                        <div class="ram-icons">
+                            <img src="static\images\cityscapes.png" alt="">
                         </div>
-                        <h3 style="color: #00B9EB; "><a href="https://www.cityscapes-dataset.com/">Cityscapes</a></h3>
-                        <p style="color: #d1d1e0; ">Contains 25,000 labeled urban scenes from cities around Germany, 5,000 are fine annotated and others are coarse.</p>
+                        <h3 style="color: #00B9EB;"><a href="https://www.cityscapes-dataset.com/">Cityscapes</a></h3>
+                        <p style="color: #d1d1e0;">Contains 25,000 labeled urban scenes from cities around Germany, 5,000 are fine annotated and others are coarse.</p>
                     </div>
-                    <div class="col-lg-3 py-3 text-center service " style="margin-left: 4%; margin-right: 4% ">
-                        <div class="ram-icons ">
-                            <img src="static\images\mapillary.png " alt=" ">
+                    <div class="col-lg-3 py-3 text-center service" style="margin-left: 4%; margin-right: 4%">
+                        <div class="ram-icons">
+                            <img src="static\images\mapillary.png" alt="">
                         </div>
-                        <h3 style="color: #00B9EB; "><a href="https://www.mapillary.com/dataset/vistas">Mapillary</a></h3>
-                        <p style="color: #d1d1e0; ">A dataset collected in multiple cities around the world, which is composed of 20,000 labeled scenes.</p>
+                        <h3 style="color: #00B9EB;"><a href="https://www.mapillary.com/dataset/vistas">Mapillary</a></h3>
+                        <p style="color: #d1d1e0;">A dataset collected in multiple cities around the world, which is composed of 20,000 labeled scenes.</p>
                     </div>
 
                 </div>
@@ -256,46 +258,46 @@
 
         <!-- Models -->
         <!-- .page-section -->
-        <div class="page-section " style="padding: 50px 0px; ">
-            <div class="container ">
-                <div class="text-center ">
-                    <h2 class="title-section " style="margin-bottom: 45px; text-transform: uppercase; ">Our Models</h2>
+        <div class="page-section" style="padding: 50px 0px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="title-section" style="margin-bottom: 45px; text-transform: uppercase;">Our Models</h2>
                 </div>
 
-                <div class="row my-5 card-blog-row ">
-                    <div class="col-lg-6 py-3 " style="max-width: 100%; ">
-                        <div class="card-blog " style="max-width: 520px; ">
-                            <div class="header ">
-                                <div class="avatar ">
-                                    <img src="../static/images/BASLINE.png " alt=" ">
+                <div class="row my-5 card-blog-row">
+                    <div class="col-lg-6 py-3" style="max-width: 100%;">
+                        <div class="card-blog" style="max-width: 520px;">
+                            <div class="header">
+                                <div class="avatar">
+                                    <img src="../static/images/BASLINE.png" alt="">
                                 </div>
-                                <div class="entry-footer ">
-                                    <div class="post-author " style="margin-bottom: 25px; text-transform: uppercase; ">ADVENT (Baseline)</div>
+                                <div class="entry-footer">
+                                    <div class="post-author" style="margin-bottom: 25px; text-transform: uppercase;">ADVENT (Baseline)</div>
                                 </div>
                             </div>
-                            <div class="body ">
-                                <div class="post-title "><a href="blog-single.html ">ADVENT address the task of unsupervised domain adaptation in semantic segmentation with losses based on the entropy of the pixel-wise predictions</a></div>
+                            <div class="body">
+                                <div class="post-title"><a href="blog-single.html">ADVENT address the task of unsupervised domain adaptation in semantic segmentation with losses based on the entropy of the pixel-wise predictions</a></div>
                             </div>
-                            <div class="footer ">
-                                <a href="blog-single.html ">Read More <span class="mai-chevron-forward text-sm "></span></a>
+                            <div class="footer">
+                                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 py-3 " style="max-width: 100%; ">
-                        <div class="card-blog " style="max-width: 520px; ">
-                            <div class="header ">
-                                <div class="avatar ">
-                                    <img src="../static/images/MTKT.png " alt=" ">
+                    <div class="col-lg-6 py-3" style="max-width: 100%;">
+                        <div class="card-blog" style="max-width: 520px;">
+                            <div class="header">
+                                <div class="avatar">
+                                    <img src="../static/images/MTKT.png" alt="">
                                 </div>
-                                <div class="entry-footer ">
-                                    <div class="post-author " style="margin-bottom: 25px; text-transform: uppercase; ">MTKT (Multi-Teatcher Knowledge Transfer)</div>
+                                <div class="entry-footer">
+                                    <div class="post-author" style="margin-bottom: 25px; text-transform: uppercase;">MTKT (Multi-Teatcher Knowledge Transfer)</div>
                                 </div>
                             </div>
-                            <div class="body ">
-                                <div class="post-title "><a href="blog-single.html ">MTKT proposes the multitarget knowledge transfer (MTKT) framework, with novel network design and learning scheme which do not rely on the joint minimization of multiple adversarial losses over the same classifier module, hopefully reducing the instability of the training.</a></div>
+                            <div class="body">
+                                <div class="post-title"><a href="blog-single.html">MTKT proposes the multitarget knowledge transfer (MTKT) framework, with novel network design and learning scheme which do not rely on the joint minimization of multiple adversarial losses over the same classifier module, hopefully reducing the instability of the training.</a></div>
                             </div>
-                            <div class="footer ">
-                                <a href="blog-single.html ">Read More <span class="mai-chevron-forward text-sm "></span></a>
+                            <div class="footer">
+                                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
                             </div>
                         </div>
                     </div>
@@ -306,18 +308,33 @@
 
         <!-- Carla -->
         <!-- Testimonials -->
-        <div class="page-section" style="padding: 50px 0px; ">
-            <div class="container home-bg " style="min-width: 100%; background: #1b1b1b">
-                <div class="text-center " style="padding-bottom: 25px;">
-                    <h1 class="service-title " style="color: #f4f4f4; font-size: 30px; text-transform: uppercase; "><span class="fg-primary">Carla</span> Simulator</h1>
-                    <div class="service-aro-icon ">
-                        <div class="service-aro-left "></div>
-                        <i class="fa fa-gift "></i>
-                        <div class="service-aro-right "></div>
+        <div class="page-section" style="padding: 50px 0px;">
+            <div class="container home-bg" style="min-width: 100%; background: #1b1b1b">
+                <div class="text-center" style="padding-bottom: 25px;">
+                    <h1 class="service-title" style="color: #f4f4f4; font-size: 30px; text-transform: uppercase;"><span class="fg-primary">Carla</span> Simulator</h1>
+                    <div class="service-aro-icon">
+                        <div class="service-aro-left"></div>
+                        <i class="fa fa-gift"></i>
+                        <div class="service-aro-right"></div>
                     </div>
                 </div>
 
                 <div class="owl-carousel testimonial-carousel">
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla_gif1.gif" alt="">
+                    </div>
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla_gif2.gif" alt="">
+                    </div>
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla_gif3.gif" alt="">
+                    </div>
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla_gif4.gif" alt="">
+                    </div>
+                    <div class="card-testimonial">
+                        <img src="../static/images/carla_gif5.gif" alt="">
+                    </div>
                     <div class="card-testimonial">
                         <img src="../static/images/carla1-1.jpeg" alt="">
                     </div>
@@ -330,17 +347,14 @@
                         <img src="../static/images/carla2.jpeg" alt="">
                     </div>
 
-                    <div class="card-testimonial">
+                    <!-- <div class="card-testimonial">
                         <img src="../static/images/carla2-2.jpeg" alt="">
-                    </div>
+                    </div> -->
 
                     <div class="card-testimonial">
                         <img src="../static/images/carla3.jpeg" alt="">
                     </div>
-                    <!-- 
-                    <div class="card-testimonial">
-                      <img src="../static/images/carla1-1.jpeg" alt="">
-                    </div> -->
+
 
                 </div>
                 <!-- .row -->
@@ -350,10 +364,10 @@
         <!-- .page-section -->
 
         <!-- Pull Req. -->
-        <div class="page-section" style="padding: 50px 0px; ">
+        <div class="page-section" style="padding: 50px 0px;">
             <div class="container">
-                <div class="text-center ">
-                    <h2 class="title-section " style="margin-bottom: 45px; text-transform: uppercase; ">Pull Requst</h2>
+                <div class="text-center">
+                    <h2 class="title-section" style="margin-bottom: 45px; text-transform: uppercase;">Pull Requst</h2>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-3 py-3">
@@ -377,53 +391,53 @@
 
         <!-- Ram Heros -->
         <section id="about-page">
-            <div class="container ">
+            <div class="container">
                 <div>
-                    <div class="col-md-12 text-center ">
-                        <h1 class="about-title ">About Us</h1>
-                        <div class="service-aro-icon ">
-                            <div class="service-aro-left "></div>
-                            <i class="fa fa-group "></i>
-                            <div class="service-aro-right "></div>
+                    <div class="col-md-12 text-center">
+                        <h1 class="about-title">About Us</h1>
+                        <div class="service-aro-icon">
+                            <div class="service-aro-left"></div>
+                            <i class="fa fa-group"></i>
+                            <div class="service-aro-right"></div>
                         </div>
-                        <img src="../static/images/RAM.png " alt=" ">
+                        <img src="../static/images/RAM.png" alt="">
                         <h2>We are creative and young</h2>
                     </div>
-                    <div class="row ">
-                        <div class="col-md-4 text-center member ">
-                            <div class="member-img ">
-                                <img src="../static/images/02.jpg " alt=" " />
-                                <div class="member-social ">
-                                    <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
-                                    <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
-                                    <a class="linkedin-icon " href=" "><i class="fa fa-linkedin "></i></a>
-                                    <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
+                    <div class="row">
+                        <div class="col-md-4 text-center member">
+                            <div class="member-img">
+                                <img src="../static/images/02.jpg" alt="" />
+                                <div class="member-social">
+                                    <a class="facebook-icon" href=""><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter-icon" href=""><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin-icon" href=""><i class="fa fa-linkedin"></i></a>
+                                    <a class="google-plus-icon" href=""><i class="fa fa-google-plus"></i></a>
                                 </div>
                             </div>
                             <h3>Mohamed</h3>
                             <span>Designer</span>
                         </div>
-                        <div class="col-md-4 text-center member ">
-                            <div class="member-img ">
-                                <img src="../static/images/02.jpg " alt=" " />
-                                <div class="member-social ">
-                                    <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
-                                    <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
-                                    <a class="linkedin-icon " href=" "><i class="fa fa-linkedin "></i></a>
-                                    <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
+                        <div class="col-md-4 text-center member">
+                            <div class="member-img">
+                                <img src="../static/images/02.jpg" alt="" />
+                                <div class="member-social">
+                                    <a class="facebook-icon" href=""><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter-icon" href=""><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin-icon" href=""><i class="fa fa-linkedin"></i></a>
+                                    <a class="google-plus-icon" href=""><i class="fa fa-google-plus"></i></a>
                                 </div>
                             </div>
                             <h3>Mohamed</h3>
                             <span>Designer</span>
                         </div>
-                        <div class="col-md-4 text-center member ">
-                            <div class="member-img ">
-                                <img src="../static/images/03.jpg " alt=" " />
-                                <div class="member-social ">
-                                    <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
-                                    <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
-                                    <a class="linkedin-icon " href=" "><i class="fa fa-linkedin "></i></a>
-                                    <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
+                        <div class="col-md-4 text-center member">
+                            <div class="member-img">
+                                <img src="../static/images/03.jpg" alt="" />
+                                <div class="member-social">
+                                    <a class="facebook-icon" href=""><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter-icon" href=""><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin-icon" href=""><i class="fa fa-linkedin"></i></a>
+                                    <a class="google-plus-icon" href=""><i class="fa fa-google-plus"></i></a>
                                 </div>
                             </div>
                             <h3>Ali</h3>
@@ -431,28 +445,28 @@
                         </div>
                     </div>
                     <!-- /.row -->
-                    <div class="row ">
-                        <div class="col-md-6 text-center member ">
-                            <div class="member-img ">
-                                <img src="../static/images/01.jpg " alt=" " />
-                                <div class="member-social ">
-                                    <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
-                                    <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
-                                    <a class="linkedin-icon " href=" "><i class="fa fa-linkedin "></i></a>
-                                    <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
+                    <div class="row">
+                        <div class="col-md-6 text-center member">
+                            <div class="member-img">
+                                <img src="../static/images/01.jpg" alt="" />
+                                <div class="member-social">
+                                    <a class="facebook-icon" href=""><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter-icon" href=""><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin-icon" href=""><i class="fa fa-linkedin"></i></a>
+                                    <a class="google-plus-icon" href=""><i class="fa fa-google-plus"></i></a>
                                 </div>
                             </div>
                             <h3>Rawan</h3>
                             <span>Lead Developer</span>
                         </div>
-                        <div class="col-md-6 text-center member ">
-                            <div class="member-img ">
-                                <img src="../static/images/01.jpg " alt=" " />
-                                <div class="member-social ">
-                                    <a class="facebook-icon " href=" "><i class="fa fa-facebook "></i></a>
-                                    <a class="twitter-icon " href=" "><i class="fa fa-twitter "></i></a>
-                                    <a class="linkedin-icon " href=" "><i class="fa fa-linkedin "></i></a>
-                                    <a class="google-plus-icon " href=" "><i class="fa fa-google-plus "></i></a>
+                        <div class="col-md-6 text-center member">
+                            <div class="member-img">
+                                <img src="../static/images/01.jpg" alt="" />
+                                <div class="member-social">
+                                    <a class="facebook-icon" href=""><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter-icon" href=""><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin-icon" href=""><i class="fa fa-linkedin"></i></a>
+                                    <a class="google-plus-icon" href=""><i class="fa fa-google-plus"></i></a>
                                 </div>
                             </div>
                             <h3>Afnan</h3>
@@ -467,13 +481,13 @@
         </section>
         <!-- /#about-page -->
 
-        <div class="page-section ">
-            <div class="container ">
-                <div class="text-center ">
-                    <h2 class="title-section mb-3 ">Stay in touch</h2>
-                    <p>Just say hello or drop us a line. You can manualy send us email on <a href="mailto:seg2ram@gmail.com ">seg2ram@gmail.com</a></p>
+        <div class="page-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="title-section mb-3">Stay in touch</h2>
+                    <p>Just say hello or drop us a line. You can manualy send us email on <a href="mailto:seg2ram@gmail.com">seg2ram@gmail.com</a></p>
                     <br>
-                    <h1 class="title-section mb-3 ">RAM</h1>
+                    <h1 class="title-section mb-3">RAM</h1>
                 </div>
             </div>
             <!-- .container -->
@@ -482,13 +496,13 @@
 
     </main>
 
-    <footer class="page-footer ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-3 py-3 ">
-                    <h3><span class="fg-primary ">RAM</span>-Team</h3>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 py-3">
+                    <h3><span class="fg-primary">RAM</span>-Team</h3>
                 </div>
-                <div class="col-lg-3 py-3 ">
+                <div class="col-lg-3 py-3">
                     <h5>Contact Information</h5>
                     <p>Mansoura</p>
                     <p>Email: seg2ram@gmail.com</p>
@@ -503,16 +517,16 @@
 
             <hr>
 
-            <div class="row mt-4 ">
-                <div class="col-md-6 ">
-                    <p>Copyright 2022. This template designed by <a href="https://macodeid.com ">MACode ID</a></p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>Copyright 2022. This template designed by <a href="https://macodeid.com">MACode ID</a></p>
                 </div>
-                <div class="col-md-6 text-right ">
-                    <div class="sosmed-button ">
-                        <a href="# "><span class="mai-logo-facebook-f "></span></a>
-                        <a href="# "><span class="mai-logo-twitter "></span></a>
-                        <a href="# "><span class="mai-logo-youtube "></span></a>
-                        <a href="# "><span class="mai-logo-linkedin "></span></a>
+                <div class="col-md-6 text-right">
+                    <div class="sosmed-button">
+                        <a href="#"><span class="mai-logo-facebook-f"></span></a>
+                        <a href="#"><span class="mai-logo-twitter"></span></a>
+                        <a href="#"><span class="mai-logo-youtube"></span></a>
+                        <a href="#"><span class="mai-logo-linkedin"></span></a>
                     </div>
                 </div>
             </div>
@@ -521,25 +535,27 @@
 
 
 
-    <script src="../static/js/jquery-3.5.1.min.js "></script>
+    <script src="../static/js/jquery-3.5.1.min.js"></script>
 
-    <script src="../static/js/bootstrap.bundle.min.js "></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../static/vendor/owl-carousel/js/owl.carousel.min.js "></script>
+    <script src="../static/vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
-    <script src="../static/vendor/wow/wow.min.js "></script>
+    <script src="../static/vendor/wow/wow.min.js"></script>
 
-    <script src="../static/vendor/fancybox/js/jquery.fancybox.min.js "></script>
+    <script src="../static/vendor/fancybox/js/jquery.fancybox.min.js"></script>
 
-    <script src="../static/vendor/isotope/isotope.pkgd.min.js "></script>
+    <script src="../static/vendor/isotope/isotope.pkgd.min.js"></script>
 
-    <script src="../static/js/google-maps.js "></script>
+    <script src="../static/js/google-maps.js"></script>
 
-    <script src="../static/js/theme.js "></script>
+    <script src="../static/js/theme.js"></script>
 
-    <script src="../static/js/app.js "></script>
+    <script src="../static/js/app.js"></script>
 
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap "></script> -->
+    <!-- modal -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
 
 </body>
 

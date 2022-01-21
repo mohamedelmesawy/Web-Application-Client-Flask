@@ -674,3 +674,18 @@ h6 {
         right: 98px;
     }
 }
+
+.swal2-popup,
+.swal2-modal,
+.swal2-show {
+    height: 320px !important;
+    width: 1200px !important;
+    background: #ffffffba !important;
+}
+
+.swal2-confirm,
+.swal2-styled {
+    outline: none;
+    border-color: #1FA3FF;
+    background: #1FA3FF;
+}

@@ -26,11 +26,7 @@ async def root(request: Request):
         "index.html", {"request": request}
     )
   
-@app.get("/about.html")
-async def root(request: Request):
-    return templates.TemplateResponse(
-        "about.html", {"request": request}
-    )  
+
 #########################
 @app.post("/files/")
 async def create_files(files: List[bytes] = File(...)):

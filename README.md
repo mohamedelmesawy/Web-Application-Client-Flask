@@ -14,7 +14,7 @@ It consumes FastAPI in the following repo https://github.com/mohamedelmesawy/Web
 
 ## Features ##
 :heavy_check_mark: Fine Segmentation for unlabeled or coarse segmentated image. \
-:heavy_check_mark: Segmentation with calculation of mIOU for labeled image. \
+:heavy_check_mark: Segmentation with calculation of mIOU for labeled image. 
 
 ## Technologies ##
 The following tools were used:
